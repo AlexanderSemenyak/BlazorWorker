@@ -23,14 +23,14 @@ The library comes in two flavours, one built on top of the other:
 - [![NuGet](https://img.shields.io/nuget/dt/Tewr.BlazorWorker.BackgroundService.svg?label=Tewr.BlazorWorker.BackgroundService)](https://www.nuget.org/packages/Tewr.BlazorWorker.BackgroundService) - A high-level expressions-based API that hides the complexity of messaging, using strongly typed service definitions. Recommended for long-running tasks without too much back and forth.
 - [![NuGet](https://img.shields.io/nuget/dt/Tewr.BlazorWorker.Core.svg?label=Tewr.BlazorWorker.Core)](https://www.nuget.org/packages/Tewr.BlazorWorker.Core) - A low-level API to communicate with a new .NET process in a web worker. Uses plain strings for communication. Recommended for chatty high-performance communication.
 
-### Net 5 & 6 Support
-.netstandard2, .net5 and .net6 can be used as targets with BlazorWorker version v3.x, but new features will not be developed for these targets due to the breaking changes in .net7.
+### Supported framework versions
 
-### Net 7 Support
-.net7 can be used as targets upt to BlazorWorker version v5.x, new features will not be developed for these targets.
+| .NET Version(s) targets         | Supported BlazorWorker Versions |
+| ------------------------------- | ------------------------------- |
+| .NET Standard 2, .NET 5, .NET 6 | v3.x                            |
+| .NET 7                          | v3.x to v5.x                    |
+| .NET 8, .NET 9, .NET 10         | v4.x and later                  |
 
-### Net 8, 9, 10 Support
-.net8 targets and newer can be used from [release v4.0.0](https://github.com/Tewr/BlazorWorker/releases/tag/v4.0.0) and higher versions.
 
 ### Native framework multithreading
 Multi-threading enthusiasts should closely monitor [this tracking issue](https://github.com/dotnet/aspnetcore/issues/17730) in the dotnet runtime repo, which promises threading support in ~~.net 7~~ ~~.net8~~ ~~.net9~~ ~~.net10~~ .net11, projected for nov 2026.
